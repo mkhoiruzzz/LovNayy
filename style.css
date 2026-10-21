@@ -1,0 +1,7 @@
+:root{color-scheme:dark;--bg:#0b0a1f;--btn:#ff8cc6}
+html,body{margin:0;height:100%;background:var(--bg);overflow:hidden}
+canvas{position:fixed;inset:0;width:100%;height:100%;display:block}
+#bar{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);display:flex;gap:10px;opacity:0;pointer-events:none;transition:opacity .6s}
+#bar.show{opacity:.75;pointer-events:auto}
+#bar:hover,#bar:focus-within{opacity:1}
+#bar button,#bar label{background:transparent;color:var(--btn);border:1px solid currentColor;border-radius:999px;padding:8px 20px;font:14px system-ui,sans-serif;cursor:pointer;white-space:nowrap}
